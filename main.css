@@ -1,0 +1,30 @@
+.title {
+    text-align: center;
+}
+
+body {
+    background-color: #ADD8E6;
+}
+
+.fa {
+    padding: 0px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+.fa-instagram {
+    background-color: #962fbf;
+    color: white;
+    font-size: 50px;
+  }
+
+.fa-soundcloud {
+    color: red;
+}
+
+.fa-facebook {
+    color: blue;
+}
