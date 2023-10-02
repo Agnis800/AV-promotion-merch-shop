@@ -2,14 +2,37 @@
     text-align: center;
 }
 
+h1 {
+    text-align: center;
+}
+
 body {
     background-color: #ADD8E6;
 }
 
+.name {
+    text-align: center;
+}
+
+
+.logo1 {
+    color: green;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+}
+
+.logo2 {
+    color: red;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+}
+
 .fa {
-    padding: 0px;
+    padding: 20px;
     font-size: 30px;
-    width: 15px;
+    width: 50px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
