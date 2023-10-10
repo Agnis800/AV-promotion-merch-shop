@@ -1,5 +1,11 @@
 .title {
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+.artwork {
+    text-align: center;
 }
 
 h1 {
@@ -12,6 +18,20 @@ body {
 
 .name {
     text-align: center;
+}
+
+.concert1 {
+    font-size: 20px;
+}
+
+.concert2 {
+    font-size: 20px;
+}
+
+.merch {
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -50,4 +70,8 @@ body {
 
 .fa-facebook {
     color: blue;
+}
+
+.mailing-form {
+    text-align: center;
 }
