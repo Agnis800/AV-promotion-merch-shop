@@ -5,3 +5,19 @@ body {
 .name {
     text-align: center;
 }
+
+.button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.item1, .item2, .item3 {
+    border-style: solid;
+    width: 20%;
+}
