@@ -6,7 +6,24 @@ body {
     text-align: center;
 }
 
-.button {
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-btn {
+    background-color: blue;
+    border-style: solid;
+    color: white;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 20%;
+}
+
+.c-btn {
     background-color: blue;
     border: none;
     color: white;
@@ -15,9 +32,69 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    position: relative;
+    left: 10px;
+    right: 20px;
+}
+
+.item1, .item2 {
+    border-style: solid;
+    width: 20%;
+    padding: 0.4%;
+    background-color: purple;
+}
+
+.item3 {
+    border-style: solid;
+    width: 20%;
+    padding: 0.4%;
+    background-color: green;
 }
 
 .item1, .item2, .item3 {
-    border-style: solid;
-    width: 20%;
+    display: inline-block;
+}
+
+.catalog {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.c-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    left: 0px;
+}
+
+.title, .price {
+    position: relative;
+    left: 10px;
+    right: 20px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
