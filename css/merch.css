@@ -1,3 +1,7 @@
+html * {
+    font-family: Candara;
+}
+
 body {
     background-color: #ADD8E6;
 }
@@ -42,6 +46,7 @@ body {
     width: 20%;
     padding: 0.4%;
     background-color: purple;
+
 }
 
 .item3 {
@@ -53,11 +58,13 @@ body {
 
 .item1, .item2, .item3 {
     display: inline-block;
+
 }
 
 .catalog {
     display: flex;
     justify-content: center;
+    column-gap: 20px;
 }
 
 img {

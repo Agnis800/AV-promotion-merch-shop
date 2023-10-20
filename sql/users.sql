@@ -7,3 +7,6 @@ CREATE TABLE users (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 */
+
+INSERT INTO users (id, username, email, password)
+VALUES (1, "AgnisV", "agnisvanags@gmail.com", "12345678");
