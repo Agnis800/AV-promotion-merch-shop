@@ -1,0 +1,57 @@
+html * {
+    font-family: Candara;
+}
+
+.title {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+
+.menu-btn {
+    background-color: blue;
+    border-style: solid;
+    color: white;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 20%;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: #ADD8E6;
+}
+
+.name {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a:link.menu-btn {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited.menu-btn {
+    color: white;
+}
+
+a:hover.menu-btn {
+    text-decoration: underline;
+}
