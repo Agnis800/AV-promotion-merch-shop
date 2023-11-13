@@ -21,13 +21,15 @@ session_start();
                 <button class="menu-btn"><a href="form.html">Mailing list</a></button>
             </div>
             <div class="menu">
-               <button class="menu-btn"><a href="cart.html">Your cart</a></button>
                <?php
                 if (isset($_SESSION["user"])) {
                 ?>
+                      <button class="menu-btn"><a href="cart.php">Your cart</a></button>
                       <button class="menu-btn"><a href="index.php">Your account</a>
                       <button class="menu-btn"><a href="logout.php">Logout</a>
+                      <button class="menu-btn"><a href="add.php">Add products</a></button>
                 <?php }if (!isset($_SESSION["user"])){ ?>
+                      <button class="menu-btn"><a href="cart.php">Your cart</a></button>
                       <button class="menu-btn"><a href="login.php">Login</a></button>
                       <button class="menu-btn"><a href="register.php">Register</a></button>
                 <?php } ?>

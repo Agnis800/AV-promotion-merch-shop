@@ -22,7 +22,7 @@ if (isset($_SESSION["user"])) {
                 $username = $_POST["username"];
                 $password = $_POST["password"];
                  require_once "database.php";
-                 $sql = "SELECT * FROM users WHERE username = '$username'";
+                 $sql = "SELECT * FROM users1 WHERE username = '$username'";
                  $result = mysqli_query($conn, $sql);
                  $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
                  if ($user) {

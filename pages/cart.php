@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,6 +19,19 @@
                 <button class="menu-btn"><a href="concerts.html">Concerts</a></button>
                 <button class="menu-btn"><a href="merch.php">Merch</a></button>
                 <button class="menu-btn"><a href="form.html">Mailing list</a></button>
+            </div>
+            <div class="menu">
+               <?php
+                if (isset($_SESSION["user"])) {
+                ?>
+                      <button class="menu-btn"><a href="cart.php">Your cart</a></button>
+                      <button class="menu-btn"><a href="index.php">Your account</a>
+                      <button class="menu-btn"><a href="logout.php">Logout</a>
+                <?php }if (!isset($_SESSION["user"])){ ?>
+                      <button class="menu-btn"><a href="cart.php">Your cart</a></button>
+                      <button class="menu-btn"><a href="login.php">Login</a></button>
+                      <button class="menu-btn"><a href="register.php">Register</a></button>
+                <?php } ?>
             </div>
             <div class="cart">
                  <h1>Your cart:</h1>
