@@ -15,23 +15,23 @@ session_start();
         <main>
             <div class="container">
                <?php
-               if (isset($_POST["submit"]) && isset($_FILES['myImage'])) {
-                  
+               if (isset($_POST["submit"])) {
                   $title = $_POST["Title"];
                   $description = $_POST["Description"];
                   $price = $_POST["Price"];
+                  $quantity = $_POST["Quantity"];
                   $image = $_POST["Image"];
 
                   require_once "database.php";
-                  $sql = "SELECT * FROM products";
+                  $sql = "SELECT * FROM products2";
                   $result = mysqli_query($conn, $sql);
                   $rowCount = mysqli_num_rows($result);
 
-                  $sql = "INSERT INTO products (Title, Description, Price, Image) VALUES (?, ?, ?, ?)";
+                  $sql = "INSERT INTO products2 (Title, Description, Price, Quantity, Image) VALUES (?, ?, ?, ?, ?)";
                   $stmt = mysqli_stmt_init($conn);
                   $prepareStmt = mysqli_stmt_prepare($stmt, $sql);
                   if ($prepareStmt) {
-                  mysqli_stmt_bind_param($stmt, "ssss", $title, $description, $price, $image);
+                  mysqli_stmt_bind_param($stmt, "sssss", $title, $description, $price, $quantity, $image);
                   mysqli_stmt_execute($stmt);
                   echo "Product added succesfully.";
                } else {
@@ -51,8 +51,11 @@ session_start();
                <label for="price"><b>Price</b></label>
                <input type="text" class="input" placeholder="Price" name="Price">
 
+               <label for="quantity"><b>Quantity</b></label>
+               <input type="text" class="input" placeholder="Quantity" name="Quantity">
+
                <label for="image"><b>Image</b></label>
-               <input type="file" id="myFile" name="myImage">
+               <input type="text" class="input" placeholder="Image" name="Image">
 
                <div class="clearfix">
                   <input type="submit" value="Add" name="submit">
