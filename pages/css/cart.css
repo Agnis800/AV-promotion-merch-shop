@@ -13,7 +13,6 @@ html * {
     justify-content: center;
 }
 
-
 .menu-btn {
     background-color: blue;
     border-style: solid;
@@ -32,6 +31,10 @@ h1 {
 
 body {
     background-color: #ADD8E6;
+}
+
+table, th, tr {
+    text-align: center;
 }
 
 .name {

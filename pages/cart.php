@@ -9,6 +9,9 @@ session_start();
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <link rel="stylesheet" href="css/cart.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
         <title>Agnis Vanags</title>
     </head>
     <body>
@@ -35,7 +38,7 @@ session_start();
             </div>
             <div class="cart">
                 <div style="clear: both"></div>
-                <h3 class="title2">Shopping Cart Details</h3>
+                <h3 class="title2">Your Cart</h3>
                 <div class="table-responsive">
                    <table class="table table-bordered">
                     <tr>

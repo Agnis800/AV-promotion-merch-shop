@@ -50,6 +50,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <link rel="stylesheet" href="css/merch.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
         <title>Agnis Vanags</title>
     </head>
     <body>
@@ -94,7 +97,7 @@
                                     <img src="<?php echo $row["Image"]; ?>" class="img-responsive" style="width:250px">
                                     <h5 class="text-info"><?php echo $row["Title"]; ?></h5>
                                     <h5 class="text-danger"><?php echo $row["Price"]; ?></h5>
-                                    <input type="text" name="Quantity" class="form-control" value="1">
+                                    <input type="text" name="quantity" class="form-control" value="1">
                                     <input type="hidden" name="hidden_title" value="<?php echo $row["Title"]; ?>">
                                     <input type="hidden" name="hidden_price" value="<?php echo $row["Price"]; ?>">
                                     <input type="submit" name="add" style="margin-top: 5px;" class="btn-btn success"
