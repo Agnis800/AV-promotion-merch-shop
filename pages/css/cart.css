@@ -25,6 +25,14 @@ html * {
     width: 20%;
 }
 
+table, th, tr {
+    text-align: center;
+}
+
+table th {
+    background-color: #efefef;
+}
+
 h1 {
     text-align: center;
 }

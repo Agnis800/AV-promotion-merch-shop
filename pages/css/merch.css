@@ -6,7 +6,6 @@ body {
     background-color: #ADD8E6;
 }
 
-
 .name {
     text-align: center;
 }
@@ -57,6 +56,18 @@ body {
     position: relative;
     left: 10px;
     right: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.product{
+    border: 1px solid #eaeaec;
+    margin: -1px 19px 3px -1px;
+    padding: 10px;
+    text-align: center;
+    background-color: #efefef;
 }
 
 .item1, .item2 {

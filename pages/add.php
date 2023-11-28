@@ -7,7 +7,7 @@ session_start();
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="css/add.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Agnis Vanags</title>
     </head>
@@ -59,6 +59,27 @@ session_start();
 
                <div class="clearfix">
                   <input type="submit" value="Add" name="submit">
+               </div>
+            <div class="deletepr">
+                <?php
+                    require_once "database.php";
+                    $sql = mysqli_query($conn, "SELECT Title from products2");
+                    $data = $sql->fetch_all(MYSQLI_ASSOC);
+                ?>
+                <h1>DELETE PRODUCTS</h1>
+                <hr>
+                <label for="products"><b>Product:</b></label>
+                <select name="products" id="products">
+                    <option value=""></option>
+                    <?php foreach ($data as $row): ?>
+                    <option value="<?= htmlspecialchars($row['ID']) ?>">
+                      <?= htmlspecialchars($row['Title']) ?>
+                    </option>
+                    <?php endforeach ?>
+                </select>
+
+                <div class="clearfix">
+                    <input type="submit" value="Delete" name="delete">
             </div>
         </main>
         <footer>
