@@ -1,6 +1,6 @@
 <?php
   session_start();
-
+  # Izveido masīvu groza pievienošanas sistēmai
   if (isset($_POST["add"])){
       if (isset($_SESSION["cart"])){
           $item_array_id = array_column($_SESSION["cart"], "product_id");
@@ -13,8 +13,10 @@
                   'item_quantity' => $_POST["quantity"],
               );
               $_SESSION["cart"][$count] = $item_array;
+              # Pievieno preci grozam
               echo '<script>window.location="cart.php"</script>';
           }else{
+            # Izvada paziņojumu, ka produkts ir jau grozā, un nosūta lietotāju atpakaļ uz veikala lapu
               echo '<script>alert("Product is already added to cart")</script>';
               echo '<script>window.location="merch.php"</script>';
           }
@@ -29,7 +31,7 @@
 
       }
     }
-
+   # Noņem preci no groza, ja lietotājs nospiež pogu "Delete"
    if (isset($_GET["action"])){
       if ($_GET["action"] == "delete"){
          foreach ($_SESSION["cart"] as $keys => $value){
@@ -54,6 +56,7 @@
     </head>
     <body>
         <main>
+            <!-- Galvenā izvēlne -->
             <div class="menu">
                 <button class="menu-btn"><a href="main.html">Main</a></button>
                 <button class="menu-btn"><a href="music.html">Music</a></button>
@@ -62,6 +65,7 @@
                 <button class="menu-btn"><a href="form.html">Mailing list</a></button>
             </div>
             <div class="menu">
+                <!-- Izvēlnes ir savādākas, ja lietotājs ir ielogojies, vai nav ielogojies. -->
                <?php
                 if (isset($_SESSION["user"])) {
                 ?>
@@ -79,6 +83,7 @@
                 <h1>AV MERCH</h1>
             </div>
             <div class="container" style="width: 25%">
+                <!-- PHP kods izvada info par visām precēm no datubāzes. -->
                 <?php
                     require_once "database.php";
                     $query = "SELECT * FROM products2 ORDER BY ID ASC ";

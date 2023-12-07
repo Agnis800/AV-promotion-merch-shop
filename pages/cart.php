@@ -22,6 +22,7 @@ session_start();
                 <button class="menu-btn"><a href="form.html">Mailing list</a></button>
             </div>
             <div class="menu">
+                <!-- Izvēlnes ir savādākas, ja lietotājs ir reģistrējies, vai nav reģistrējies -->
                <?php
                 if (isset($_SESSION["user"])) {
                 ?>
@@ -37,6 +38,7 @@ session_start();
             <div class="cart">
                 <div style="clear: both"></div>
                 <h3 class="title2">Your Cart</h3>
+                <!-- Groza tabula -->
                 <div class="table-responsive">
                    <table class="table table-bordered">
                     <tr>
@@ -53,6 +55,7 @@ session_start();
                             foreach ($_SESSION["cart"] as $key => $value) {
                                 ?>
                                 <tr>
+                                    <!-- Izvada datus par grozā ievietotajam precēm (no merch.php lapas) -->
                                     <td><?php echo $value["item_name"]; ?></td>
                                     <td><?php echo $value["item_quantity"]; ?></td>
                                     <td>$ <?php echo $value["product_price"]; ?></td>
@@ -63,6 +66,7 @@ session_start();
 
                                     </tr>
                                     <?php
+                                    # Saskaita kopsummu
                                     $total = $total + ($value["item_quantity"] * $value["product_price"]);
                             }
                                     ?>
@@ -76,6 +80,10 @@ session_start();
                             }
                         ?>
                     </table>
+                <!-- Kad lietotājs nospiež pogu "Submit" tad lietotājs tiek novirzīts uz pasūtījuma formu. -->
+                <div class="submit">
+                     <input type="submit" onclick="document.location = 'order.php'" value="Order Now" name="order">
+                </div>
                 </div>
             </div>
         </main>

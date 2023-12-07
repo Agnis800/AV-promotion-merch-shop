@@ -65,7 +65,14 @@ session_start();
                     require_once "database.php";
                     $sql = mysqli_query($conn, "SELECT Title from products2");
                     $data = $sql->fetch_all(MYSQLI_ASSOC);
+
+                    if (isset($_POST["delete"])) {
+                        $stmt = $conn->prepare("DELETE FROM products2 WHERE Title = ?");
+                        $stmt->bind_param('s', $title);
+                        $stmt->execute();
+                    }
                 ?>
+                <form action="add.php" method="post" style="border:1px solid #ccc">
                 <h1>DELETE PRODUCTS</h1>
                 <hr>
                 <label for="products"><b>Product:</b></label>

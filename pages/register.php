@@ -1,3 +1,4 @@
+<!-- Nosūta lietotāju uz apstiprinājuma lapu -->
 <?php
 session_start();
 if (isset($_SESSION["user"])) {
@@ -16,7 +17,9 @@ if (isset($_SESSION["user"])) {
     <body>
         <main>
             <div class="container">
+                <!-- PHP kods darbojas, kad lietotājs nospiež "Register" pogu -->
                 <?php
+                    # Apstrādā formā ievadītos datus
                     if (isset($_POST["submit"])) {
                         $username = $_POST["username"];
                         $email = $_POST["email"];
@@ -27,6 +30,7 @@ if (isset($_SESSION["user"])) {
 
                         $errors = array();
 
+                        # Lauku validācija
                         if (empty($username) OR empty($email) OR empty($password) OR empty($passwordConfirm)) {
                            array_push($errors,"All fields are required");
                           }
@@ -39,6 +43,7 @@ if (isset($_SESSION["user"])) {
                         if ($password!==$passwordConfirm) {
                             array_push($errors,"Password does not match");
                         }
+                        # Pārbauda, vai e-pasts ir unikāls
                         require_once "database.php";
                         $sql = "SELECT * FROM users WHERE email = '$email'";
                         $result = mysqli_query($conn, $sql);
@@ -51,7 +56,7 @@ if (isset($_SESSION["user"])) {
                                 echo "<div class='alert alert-danger'>$error</div>";
                             }
                         }else{
-
+                           # Ievieto formā ievadītos datus datubāzē
                            $sql = "INSERT INTO users (username, email, password) VALUES ( ?, ?, ? )";
                            $stmt = mysqli_stmt_init($conn);
                            $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
@@ -65,6 +70,7 @@ if (isset($_SESSION["user"])) {
                         }
                     }
                 ?>
+                <!-- Reģistrācijas forma -->
                 <form action="register.php" method="post" style="border:1px solid #ccc">
                 <h1>Sign Up</h1>
                 <hr>

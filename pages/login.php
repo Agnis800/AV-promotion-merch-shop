@@ -1,3 +1,4 @@
+<!-- Nosūta lietotāju uz apstiprinājuma lapu -->
 <?php
 session_start();
 if (isset($_SESSION["user"])) {
@@ -16,7 +17,9 @@ if (isset($_SESSION["user"])) {
     <body>
         <main>
           <div class="container">
+            <!-- Kods darbojas, kad lietotājs nospiež "login" pogu -->
             <?php
+            # Pārbauda, vai lietotājs eksistē datubāzē, pāŗbaudot lietotājvārdu un paroli
             if (isset($_POST["login"])) {
                 $username = $_POST["username"];
                 $password = $_POST["password"];
@@ -38,6 +41,7 @@ if (isset($_SESSION["user"])) {
                  }
             }
             ?>
+            <!-- Ielogošanās forma -->
              <form action="login.php" method="post" style="border:1px solid #ccc">
                 <h1>Login</h1>
 

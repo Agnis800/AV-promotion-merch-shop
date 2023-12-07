@@ -1,0 +1,15 @@
+* {
+    font-family: Candara;
+}
+
+body {
+    background-color: #ADD8E6;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    display: inline-block;
+}
