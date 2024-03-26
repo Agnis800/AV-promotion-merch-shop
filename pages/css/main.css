@@ -12,7 +12,8 @@
 
 .menu-btn {
     background-color: blue;
-    border-style: solid;
+    border: none;
+    /* border-style: solid; */
     color: white;
     padding: 7px 14px;
     text-align: center;
