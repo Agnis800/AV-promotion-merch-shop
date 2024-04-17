@@ -12,11 +12,11 @@
     <body>
         <main>
             <div class="menu">
-                <button class="menu-btn"><a href="main.html">Main</a></button>
-                <button class="menu-btn"><a href="music.html">Music</a></button>
-                <button class="menu-btn"><a href="concerts.html">Concerts</a></button>
+                <button class="menu-btn"><a href="main.php">Main</a></button>
+                <button class="menu-btn"><a href="music.php">Music</a></button>
+                <button class="menu-btn"><a href="concerts.php">Concerts</a></button>
                 <button class="menu-btn"><a href="merch.php">Merch</a></button>
-                <button class="menu-btn"><a href="form.html">Mailing list</a></button>
+                <button class="menu-btn"><a href="form.php">Mailing list</a></button>
             </div>
             <div class="Concerts">
             <h1>CONCERTS</h1>
