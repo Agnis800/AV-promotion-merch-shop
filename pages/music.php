@@ -9,6 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <link rel="stylesheet" href="css/music.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <title>Agnis Vanags</title>
     </head>
     <body>
@@ -23,10 +24,11 @@
             <h1>MUSIC</h1>
                 <div class="music">
                   <div class="music1">
-                     <h2>AV:</h2>
+                     <!-- <h2>AV:</h2> -->
                      <a href="https://www.instagram.com/agv_music1/?hl=en" class="fa fa-instagram" style="font-size:40px;"></a>
                      <a href="https://soundcloud.com/agnis-vanags" class="fa fa-soundcloud" style="font-size:40px;"></a>
                   </div>
+                  <!--
                   <div class="music2">
                      <h2>Chosen by the Sky:</h2>
                      <a href="https://www.instagram.com/cbts.official/?hl=en" class="fa fa-instagram" style="font-size:40px;"></a>
@@ -40,6 +42,7 @@
                      <h2>Lachuga:</h2>
                      <a href="https://www.instagram.com/lachuga_band/?hl=en&img_index=7" class="fa fa-instagram" style="font-size:40px;"></a>
                   </div>
+                  -->
                 </div>
             </div>
         </main>

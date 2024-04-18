@@ -1,7 +1,8 @@
 
-html * {
+/* html * {
     font-family: Candara;
 }
+*/
 
 body {
     background-color: #ADD8E6;
@@ -18,14 +19,18 @@ body {
 
 .menu-btn {
     background-color: blue;
-    border-style: solid;
+    border: none;
     color: white;
-    padding: 7px 14px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 30px;
     width: 20%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .menu1 {
@@ -132,6 +137,10 @@ a:hover {
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }

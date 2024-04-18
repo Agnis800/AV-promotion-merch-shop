@@ -1,6 +1,7 @@
-html * {
+/* html * {
     font-family: Candara;
 }
+*/
 
 .title {
     text-align: center;
@@ -17,12 +18,16 @@ html * {
     background-color: blue;
     border-style: solid;
     color: white;
-    padding: 7px 14px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 30px;
     width: 20%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 }
 
 table, th, tr {
@@ -52,17 +57,21 @@ table, th, tr {
 footer {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
-a:link.menu-btn {
+a:link{
     text-decoration: none;
     color: white;
 }
 
-a:visited.menu-btn {
+a:visited {
     color: white;
 }
 
-a:hover.menu-btn {
+a:hover {
     text-decoration: underline;
 }

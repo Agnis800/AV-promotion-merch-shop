@@ -47,6 +47,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
@@ -58,25 +61,25 @@
         <main>
             <!-- Galvenā izvēlne -->
             <div class="menu">
-                <button class="menu-btn"><a href="main.php">Main</a></button>
-                <button class="menu-btn"><a href="music.php">Music</a></button>
-                <button class="menu-btn"><a href="concerts.php">Concerts</a></button>
-                <button class="menu-btn"><a href="merch.php">Merch</a></button>
-                <button class="menu-btn"><a href="form.php">Mailing list</a></button>
+                <button class="menu-btn"><a href="main.php">MAIN</a></button>
+                <button class="menu-btn"><a href="music.php">MUSIC</a></button>
+                <button class="menu-btn"><a href="concerts.php">CONCERTS</a></button>
+                <button class="menu-btn"><a href="merch.php">MERCH</a></button>
+                <button class="menu-btn"><a href="form.php">MAILING LIST</a></button>
             </div>
             <div class="menu">
                 <!-- Izvēlnes ir savādākas, ja lietotājs ir ielogojies, vai nav ielogojies. -->
                <?php
                 if (isset($_SESSION["user"])) {
                 ?>
-                      <button class="menu-btn"><a href="cart.php">Your cart</a></button>
-                      <button class="menu-btn"><a href="index.php">Your account</a>
-                      <button class="menu-btn"><a href="logout.php">Logout</a>
-                      <button class="menu-btn"><a href="add.php">Add products</a></button>
+                      <button class="menu-btn"><a href="cart.php">YOUR CART</a></button>
+                      <button class="menu-btn"><a href="index.php">YOUR ACCOUNT</a>
+                      <button class="menu-btn"><a href="logout.php">LOGOUT</a>
+                      <button class="menu-btn"><a href="add.php">ADD PRODUCTS</a></button>
                 <?php }if (!isset($_SESSION["user"])){ ?>
-                      <button class="menu-btn"><a href="cart.php">Your cart</a></button>
-                      <button class="menu-btn"><a href="login.php">Login</a></button>
-                      <button class="menu-btn"><a href="register.php">Register</a></button>
+                      <button class="menu-btn"><a href="cart.php">YOUR CART</a></button>
+                      <button class="menu-btn"><a href="login.php">LOGIN</a></button>
+                      <button class="menu-btn"><a href="register.php">REGISTER</a></button>
                 <?php } ?>
             </div>
             <div class="name">
