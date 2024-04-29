@@ -34,11 +34,12 @@
                     <span style='font-size:100px;'>&#9660;</span>
                 </div>
                 </div>
-                <div class="artwork">
+                <!-- <div class="artwork">
                     <img src="Darklight_artwork.jpg" alt="'Darklight' artwork" width="300" height="300">
+                -->
                 </div>
                 <div class="title">
-                    <h2><b>D A R K L I G H T</b></h2>
+                    <h2><b>DARKLIGHT</b></h2>
                     <h2><b>COMING SOON</b></h2>
                 </div>
         </main>

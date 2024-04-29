@@ -29,12 +29,40 @@
             <div class="Concerts">
             <h1>CONCERTS</h1>
                  <!-- <h2>AV:</h2> -->
-                 <div class="concert1">
-                 <hr>
-                 <p><b>27.04.2024</b><p>
-                 <p>Jauniešu centrs "Hēlijs"<p>
-                 <p>Mārupe, Latvija</p>
-                 <hr>
+                 <div class="ConcertStatus">
+                     <h2>Upcoming:<h2>
+                 </div>
+                    <div class="concert">
+                      <hr>
+                      <p><b>09.05.2024</b><p>
+                      <p>VEF Kultūras pils<p>
+                      <p>Riga, Latvija</p>
+                      <hr>
+                    </div>
+                    <div class="concert">
+                      <hr>
+                      <p><b>24.05.2024</b><p>
+                      <p>Daycare center "Atver Durvis Betānijā"<p>
+                      <p>Riga, Latvija</p>
+                      <hr>
+                    </div>
+                 <div class="ConcertStatus">
+                      <h2>Past:<h2>
+                 </div>
+                    <div class="concert">
+                      <hr>
+                      <p><b>27.04.2024</b><p>
+                      <p>Youth center "Hēlijs"<p>
+                      <p>Marupe, Latvija</p>
+                      <hr>
+                    </div>
+                    <div class="concert">
+                      <hr>
+                      <p><b>03.03.2024</b><p>
+                      <p>Bar "Republika"<p>
+                      <p>Riga, Latvija</p>
+                      <hr>
+                    </div>
                  <!--
                  <h3>Chosen By The Sky:</h3>
                  <div class="concert2">

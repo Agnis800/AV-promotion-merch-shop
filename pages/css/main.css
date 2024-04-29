@@ -1,6 +1,11 @@
 .title {
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 30px;
+    letter-spacing: 10px;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     font-size: 20px;
 }
 
