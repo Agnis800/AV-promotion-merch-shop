@@ -33,6 +33,9 @@
                 <div class="logo2">
                     <span style='font-size:100px;'>&#9660;</span>
                 </div>
+                <div class="nameText">
+                    <h1>AGNIS VANAGS</h1>
+                </div>
                 </div>
                 <!-- <div class="artwork">
                     <img src="Darklight_artwork.jpg" alt="'Darklight' artwork" width="300" height="300">
@@ -41,6 +44,11 @@
                 <div class="title">
                     <h2><b>DARKLIGHT</b></h2>
                     <h2><b>COMING SOON</b></h2>
+                </div>
+                <div class="description">
+                    <p>Agnis Vanags is a piano and guitar player, and also a singer from Riga, Latvia. A member of 4 bands,
+                    he's currently working on his first solo album "DARKLIGHT", which will emphasize the wide emotional spectre of
+                    him - both light and darkness.</p>
                 </div>
         </main>
         <footer>

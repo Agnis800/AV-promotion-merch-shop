@@ -27,6 +27,9 @@
                 <button class="menu-btn"><a href="form.php">MAILING LIST</a></button>
             </div>
             <h1>MUSIC</h1>
+                <div class="musicDescription">
+                   <p>My current releases are listenable on SoundCloud, and info about these are available on Instagram.</p>
+                </div>
                 <div class="music">
                   <div class="music1">
                      <!-- <h2>AV:</h2> -->
