@@ -84,6 +84,10 @@ h1 {
     padding: 10px;
     text-align: center;
     background-color: #efefef;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .item1, .item2 {
