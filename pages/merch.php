@@ -121,10 +121,14 @@
                  ?>
 
             </div>
-                        
+        </main>
+        <footer>
+            <p>&copy Agnis Vanags 2023</p>
+        </footer>
+    </body>
+</html>
 
-                        
-            <!--
+<!--
             <div class="catalog">
                 <div class="item1">
                   <img src="Darklight_artwork.jpg" alt="'Darklight' artwork" width="150" height="150">
@@ -146,9 +150,3 @@
                 </div>
             </div>
                 -->
-        </main>
-        <footer>
-            <p>&copy Agnis Vanags 2023</p>
-        </footer>
-    </body>
-</html>
