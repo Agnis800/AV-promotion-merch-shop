@@ -34,13 +34,6 @@
                  </div>
                     <div class="concert">
                       <hr>
-                      <p><b>09.05.2024</b><p>
-                      <p>VEF Kultūras pils<p>
-                      <p>Riga, Latvija</p>
-                      <hr>
-                    </div>
-                    <div class="concert">
-                      <hr>
                       <p><b>24.05.2024</b><p>
                       <p>Daycare center "Atver Durvis Betānijā"<p>
                       <p>Riga, Latvija</p>

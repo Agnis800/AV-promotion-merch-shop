@@ -15,42 +15,43 @@
         <main>
            <h1>ORDER</h1>
            <div class="form">
-               <h3>Your shipping details</h3>
-               <label for="address"><b>Address<b></label>
-               <input type="text" placeholder="Address" name="Address">
+               <form action="success.php" method="post">
+                  <h3>Your shipping details</h3>
+                  <label for="address"><b>Address<b></label>
+                  <input type="text" placeholder="Address" name="Address">
 
-               <label for="city"><b>City<b></label>
-               <input type="text" placeholder="City" name="City">
+                  <label for="city"><b>City<b></label>
+                  <input type="text" placeholder="City" name="City">
 
-               <label for="country"><b>Country<b></label>
-               <input type="text" placeholder="Country" name="Country">
-               <hr>
-               <h3>Your contact information</h3>
-                <label for="first_name"><b>First Name</b></label>
-                <input type="text" placeholder="First Name" name="first_name">
+                  <label for="country"><b>Country<b></label>
+                  <input type="text" placeholder="Country" name="Country">
+                  <hr>
+                  <h3>Your contact information</h3>
+                  <label for="first_name"><b>First Name</b></label>
+                  <input type="text" placeholder="First Name" name="first_name">
 
-                <label for="last_name"><b>Last Name</b></label>
-                <input type="text" placeholder="Last Name" name="last_name">
+                  <label for="last_name"><b>Last Name</b></label>
+                  <input type="text" placeholder="Last Name" name="last_name">
 
-                <label for="e_mail"><b>E-mail</b></label>
-                <input type="text" placeholder="E-mail" name="e_mail">
+                  <label for="e_mail"><b>E-mail</b></label>
+                  <input type="text" placeholder="E-mail" name="e_mail">
 
-                <hr>
+                  <hr>
 
-                <h3>Your credit card details</h3>
+                  <h3>Your credit card details</h3>
 
-                <label for="ccnum">Credit card number</label>
-                <input type="text" placeholder="Credit card number" name="credit_card_number">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" placeholder="Credit card number" name="credit_card_number">
 
-                <label for="exp_date">Expiration date</label>
-                <input type="text" placeholder="Expiration date" name="expiration_date">
+                  <label for="exp_date">Expiration date</label>
+                  <input type="text" placeholder="Expiration date" name="expiration_date">
 
-                <label for="cvv">CVV</label>
-                <input type="text" placeholder="CVV" name="cvv">
+                  <label for="cvv">CVV</label>
+                  <input type="text" placeholder="CVV" name="cvv">
 
-                <input type="submit" value="Continue" name="submit">
+                  <input type="submit" value="Continue" name="submit">
 
-
+               </form>
            </div>
         </main>
         <footer>
