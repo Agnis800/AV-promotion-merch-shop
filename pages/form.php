@@ -27,7 +27,7 @@
             </div>
             <div class="mailing-form">
                  <h1>SIGN UP FOR MAILING LIST:</h1>
-                 <form action="/action_page.php">
+                 <form action="success1.php" method="post">
                     <label for="name">Name:</label><br>
                     <input type="text" id="name" name="name"><br>
 
