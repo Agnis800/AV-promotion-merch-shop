@@ -28,9 +28,11 @@
             </div>
             <div class="Concerts">
             <h1>CONCERTS</h1>
-                 <!-- <h2>AV:</h2> -->
                  <div class="ConcertStatus">
                      <h2>Upcoming:<h2>
+                 </div>
+                 <div class="ConcertStatus">
+                      <h2>Past:<h2>
                  </div>
                     <div class="concert">
                       <hr>
@@ -39,9 +41,6 @@
                       <p>Riga, Latvija</p>
                       <hr>
                     </div>
-                 <div class="ConcertStatus">
-                      <h2>Past:<h2>
-                 </div>
                     <div class="concert">
                       <hr>
                       <p><b>27.04.2024</b><p>
@@ -56,20 +55,6 @@
                       <p>Riga, Latvija</p>
                       <hr>
                     </div>
-                 <!--
-                 <h3>Chosen By The Sky:</h3>
-                 <div class="concert2">
-                    <hr>
-                    <p>No scheduled concerts</p>
-                    <hr>
-                 </div>
-                 <h3>Ascensia:</h3>
-                 <div class="concert3">
-                    <hr>
-                    <p>No scheduled concerts</p>
-                    <hr>
-                 </div>
-                 -->
             </div>
         </main>
         <footer>

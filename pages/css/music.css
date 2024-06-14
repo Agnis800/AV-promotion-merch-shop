@@ -2,11 +2,6 @@ body {
     background-color: #ADD8E6;
 }
 
-/* html * {
-    font-family: Candara;
-}
-*/
-
 .menu {
     display: flex;
     justify-content: center;

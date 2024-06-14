@@ -127,26 +127,3 @@
         </footer>
     </body>
 </html>
-
-<!--
-            <div class="catalog">
-                <div class="item1">
-                  <img src="Darklight_artwork.jpg" alt="'Darklight' artwork" width="150" height="150">
-                  <h2 class="title">DARKLIGHT Pre-order</h2>
-                  <p class="price">EUR 14,99</p>
-                  <button class="c-btn">Add to cart</button>
-                </div>
-                <div class="item2">
-                  <img src="https://www.hudsonwellesley.com/cdn/shop/products/Black_Tee_Front_1024x1024@2x.png?v=1582411399" alt="'Darklight' shirt" width="150" height="150">
-                  <h2 class="title">DARKLIGHT Shirt</h2>
-                  <p class="price">EUR 29,99</p>
-                  <button class="c-btn">Add to cart</button>
-                </div>
-                <div class="item3">
-                  <img src="Colors_EP.jpg" alt="'Colors EP' artwork" width="150" height="150">
-                  <h2 class="title">Colors EP</h2>
-                  <p class="price">EUR 6,99</p>
-                  <button class="c-btn">Add to cart</button>
-                </div>
-            </div>
-                -->
